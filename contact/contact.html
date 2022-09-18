@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="bootstrap.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    <div class="col">Lubumbashi-RDC</div>
+                    <div class="col" id="date_actuelle"></div>
+                    <div class="col" id="current_hour"></div>
+                    <div class="col">Nous suivre sur:
+                        <a href="https://web.facebook.com/EsisOfficiel?_rdc=1&_rdr" target="_blank"><i
+                                class="fa-brands fa-1x  fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCtDV8isvHNC0fli1FjYB-Xw" target="_blank"><i
+                                class="fa-brands fa-1x  fa-youtube"></i></a>
+                        <a href="https://www.google.com/"><i class="fa-brands fa-1x  fa-google-plus"
+                                target="_blank"></i></a>
+                        <script src="https://kit.fontawesome.com/b5e34f3759.js" crossorigin="anonymous"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-sm-5 col-md-6">
+                <img src="Esis.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img1.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img2.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img3.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm">
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <ul class="menu_deroulant">
+                            <li><a class="active" href="../accueil/accueil.html">Accueil</a></li>
+                            <li><a class="active" href="../Evenement/evenement.html">Evénéments</a></li>
+                            <li><a href="#">Education</a>
+                                <ul class="sousmenu">
+                                    <li><a href="../horaire/horaire.html">Horaire des cours</a></li>
+                                    <li><a href="../bibliotheque/bibliotheque.html">Bibliothèque</a></li>
+                                    <li><a href="../centre d'excellente/centre d'excellence.html">Centre
+                                            d'Excellence</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">A propos d'Esis</a>
+                                <ul class="sousmenu">
+                                    <li><a href="../presentation/presentation.html">Présentation</a></li>
+                                    <li><a href="../cursus/esisalama.html">Cursus</a></li>
+                                    <li><a href="../admission/admission.html">Admission</a></li>
+                                    <li><a href="../contact/contact.html">Nous contacter</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm" id="actualite">
+                    <p>Lire l'actualité</p>
+                </div>
+                <div class="col-sm" id="bande_defile">
+                    <marquee><a href="../Evenement/evenement.html">Programme de la journée scientifique</a></marquee>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class="presentation">
+        <div class="container-fluid">
+            <div class="titre">Informations de contact</div>
+            <div class="imgbox">
+                <a
+                    href="https://www.google.com/maps/place/Ecole+superieure+d'informatique+salama/@-11.6755418,27.4788667,16z/data=!4m5!3m4!1s0x0:0xf6b8bb92c30bcbc6!8m2!3d-11.6757402!4d27.4815531?hl=fr-FR"><img
+                        src="carte_esis.png" class="img-fluid"></a>
+            </div>
+            <p id="info_contact">
+                Ecole Supérieure d'Informatique Salama<br>
+                05, AV. FEMMES KATANGAISES, LUBUMBASHI - RDC<br>
+                +(243) 82 226 74 72<br>
+                info@esisalama.org
+            </p>
+            <div id="formulaire">
+
+                <div class="mb-3">
+                    <label for="texte" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="Saisissez votre nom">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput2"
+                        placeholder="Saisissez votre adresse mail">
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Choisissez une option:</option>
+                    <option value="">Question</option>
+                    <option value="">Suggestion</option>
+                    <option value="">Autres</option>
+                </select>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Messages</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                </form>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="button">Envoyer</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm">
+                    <h1>COORDONNEES</h1>
+                    <p>République Démocratique du Congo (RDC)</p>
+                    <p><i class="fa fa-phone" aria-hidden="true">+(243) 82 226 74 72</i></p>
+                    <a href="mail" target="_blank"><i class="fa fa-envelope"
+                            aria-hidden="true"></i>info@esisalama.org</a>
+                </div>
+                <div class="col-sm">
+                    <h2>QUELQUES LIENS UTILES</h2>
+                    <a href="../horaire/horaire.html">Horaires des cours</a><br>
+                    <a href="../Evenement/evenement.html">Lire les actualités</a>
+                </div>
+                <div class="col-sm">
+                    <h3>RESTONS CONNECTES</h3>
+                    <a href="https://web.facebook.com/EsisOfficiel?_rdc=1&_rdr" target="_blank"><i
+                            class="fa-brands fa-2x  fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCtDV8isvHNC0fli1FjYB-Xw" target="_blank"><i
+                            class="fa-brands fa-2x  fa-youtube"></i></a>
+                    <a href="https://www.google.com/"><i class="fa-brands fa-2x  fa-google-plus"
+                            target="_blank"></i></a>
+                    <script src="https://kit.fontawesome.com/b5e34f3759.js" crossorigin="anonymous"></script>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <p>Copyright © ESISALAMA 2022</p>
+    </div>
+
+</body>
+
+</html>

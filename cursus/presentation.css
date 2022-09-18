@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100hv;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.presentation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(cursus.jpg);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 20px;
+  color: #cc6116;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.accordion-body {
+  background-color: #000066;
+}
+
+.presentation .container-fluid {
+  position: relative;
+  display: block;
+  margin: 2% 15% 0% 15%;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #000;
+}
+
+.presentation .container-fluid::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background-attachment: fixed;
+  filter: blur(4px);
+}
+
+.titre {
+  height: 50px;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  background-color: #cc6116;
+  font-size: 20px;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.presentation .container-fluid p,
+ul,
+ol {
+  text-align: justify;
+  position: relative;
+  color: aliceblue;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 18px;
+  z-index: 2;
+}
+
+/*====Header et footer*/
+.footer {
+  background-color: #06145e;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  padding: 4%;
+}
+
+.container-fluid {
+  background-color: #701b09;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5%;
+}
+.presentation .container-fluid {
+  background: none;
+}
+
+.container-fluid div,
+i,
+p,
+a {
+  color: white;
+}
+
+#texte p {
+  color: #000066;
+}
+
+article {
+  background-color: #cc6116;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#copyright {
+  background-color: #cc6116;
+  text-align: center;
+  padding-top: 0.6%;
+  padding-bottom: 0.2%;
+}
+body .bloc_fond {
+  display: inline-block;
+  position: relative;
+}
+
+section {
+  background-color: #000066;
+  display: flexbox;
+  width: 100%;
+}
+
+/*Menu de navigation*/
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+/*a.active,*/
+a:hover {
+  background: #000066;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  line-height: 45px;
+  cursor: pointer;
+  display: block;
+}
+
+#actualite,
+#bande_defile {
+  margin-top: 0.5%;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+
+ul {
+  position: fixed;
+  width: 50%;
+  background: #d3d3d3;
+  top: 39.5%;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*=====*/
+.sousmenu {
+  background-color: navy;
+  list-style: none;
+  display: none;
+  width: 304px;
+  left: 31%;
+}
+
+.sousmenu li {
+  display: block;
+}
+.menu_deroulant li:hover .sousmenu {
+  display: block;
+}
+
+/*============*/
+@media (max-width: 858px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      position: fixed;
+      top: 66.4%;
+      left: -100%;
+    }
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 60px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #000066;
+  }
+}

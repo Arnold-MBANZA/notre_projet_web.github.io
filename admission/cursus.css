@@ -1,0 +1,75 @@
+
+body
+{
+    background-image: url(images.jpg);background-size: 100%;">/* Le fond de la page sera noir */
+   border:3px double #191A26; 
+}
+
+p {
+  letter-spacing: 1px;
+          color:white;
+          margin: 50px 50px 50px 50px;
+          text-align: justify;
+          text-indent: 30px;
+          border:3px double #191A26;
+          padding: 10px 10px 10px 10px;
+  }
+
+h1 {
+ 
+  text-shadow: -1px -1px 1px #aaa,
+  0px 4px 1px rgba(0,0,0,0.5),
+  4px 4px 5px rgba(0,0,0,0.7),
+  0px 0px 7px rgba(0,0,0,0.4);
+  text-align: center;
+ 
+
+  }
+h2{
+  text-shadow: -1px -1px 1px #aaa,
+  0px 4px 1px rgba(0,0,0,0.5),
+  4px 4px 5px rgba(0,0,0,0.7),
+  0px 0px 7px rgba(0,0,0,0.4);
+  text-align:center;
+ 
+
+}
+
+
+
+
+h3 {
+  text-shadow: -1px -1px 1px rgb(170, 170, 170),
+  0px 4px 1px rgba(0,0,0,0.5),
+  4px 4px 5px rgba(0,0,0,0.7),
+  0px 0px 7px rgba(0,0,0,0.4);
+  text-align: center;
+
+  }
+  
+h4 {
+  text-shadow: -1px -1px 1px #aaa,
+  0px 4px 1px rgba(0,0,0,0.5),
+  4px 4px 5px rgba(0,0,0,0.7),
+  0px 0px 7px rgba(0,0,0,0.4);
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+body {
+  font-family: Courier New, monospace;
+  font-size: 16px;
+  font-weight: extra bold;
+  font-style: oblique;
+  text-align: justify;
+  color: currentcolor;
+   background: conic-gradient(rgb(143, 64, 74), rgb(12, 12, 37));
+  }
+  
+div {
+  width: 200px;
+  height: 100px;
+}
+
+
+
+

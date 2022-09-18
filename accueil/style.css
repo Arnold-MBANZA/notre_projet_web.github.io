@@ -1,0 +1,185 @@
+.footer {
+  background-color: #06145e;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  padding: 4%;
+}
+
+.footer div h1,
+h3,
+h2,
+p,
+a {
+  color: white;
+  font-size: large;
+}
+
+.container-fluid {
+  background-color: #701b09;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5%;
+}
+
+.container-fluid div,
+i,
+p,
+a {
+  color: white;
+}
+
+article {
+  background-color: #cc6116;
+  justify-content: center;
+  text-align: center;
+}
+
+#copyright {
+  background-color: #cc6116;
+  text-align: center;
+  padding-top: 0.6%;
+  padding-bottom: 0.2%;
+}
+body .bloc_fond {
+  display: inline-block;
+  position: relative;
+}
+.bloc_fond .text {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: Georgia;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  color: navy;
+  width: 70%;
+}
+
+section {
+  background-color: #000066;
+  display: flexbox;
+  width: 100%;
+}
+
+/*Menu de navigation*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+/*a.active,*/
+a:hover {
+  background: #000066;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  line-height: 45px;
+  cursor: pointer;
+  display: block;
+}
+
+#actualite,
+#bande_defile {
+  margin-top: 0.5%;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+
+ul {
+  position: fixed;
+  width: 50%; /*55%*/
+  background: #d3d3d3;
+  top: 39.5%;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*=====*/
+.sousmenu {
+  background-color: navy;
+  list-style: none;
+  display: none;
+  width: 304px;
+  left: 31%;
+}
+
+.sousmenu li {
+  display: block;
+}
+.menu_deroulant li:hover .sousmenu {
+  display: block;
+}
+
+/*============*/
+
+@media (max-width: 858px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      position: fixed;
+      top: 66.4%;
+      left: -100%;
+    }
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 60px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #000066;
+  }
+}
